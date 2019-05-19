@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PittMadison/Natours.git"
+    "url": "git+https://github.com/PittMadison/Trillo.git"
   },
   "author": "Pitt Madison, karimovpg@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PittMadison/Natours/issues"
+    "url": "https://github.com/PittMadison/Trillo/issues"
   },
-  "homepage": "https://github.com/PittMadison/Natours#readme",
+  "homepage": "https://github.com/PittMadison/Trillo#readme",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "concat": "^1.0.3",
