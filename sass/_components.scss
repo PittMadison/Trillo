@@ -15,6 +15,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2)
+    }
+
     &__input{
         font-family: inherit;
         font-size: inherit;
@@ -133,6 +139,10 @@
         margin-top: 0;
     }
 
+    @media only screen and (max-width: $tiny) {
+        font-size: 1.1rem;
+    }
+
     &__item {
         position: relative;
 
@@ -178,7 +188,6 @@
         color: var(--color-grey-light-1);
         text-decoration: none;
         text-transform: uppercase;
-        display: block;
         padding: 1.5rem 3rem;
         position: relative;
         z-index: 10;
@@ -190,6 +199,15 @@
             justify-content: center;
             padding: 2rem;
         }
+
+        @media only screen and (max-width: $small) {
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        @media only screen and (max-width: $tiny) {
+            padding: 0.8rem;
+        }
     }
 
     &__icon {
@@ -197,6 +215,13 @@
         width: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $small) {
+            margin-right: 0;
+            margin-bottom: .7rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 
@@ -238,6 +263,12 @@
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
 
+        @media only screen and (max-width: $small) {
+            font-size: 1.2rem;
+            padding: 1rem .75rem;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
     }
 
     &__stars {
@@ -250,6 +281,11 @@
         width: 1.75rem;
         height: 1.75rem;
         fill: var(--color-primary);
+
+        @media only screen and (max-width: $smallest) {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
     }
 
     &__location {
@@ -273,17 +309,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $small) {
+            padding: 0 1.5rem;
+            margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: $tiny) {
+            margin-left: .75rem;
+        }
     }
 
     &__rating-average {
         font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
+
+        @media only screen and (max-width: $small) {
+            font-size: 1.8rem;
+        }
     }
 
     &__rating-count {
         font-size: .8rem;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $small) {
+            font-size: .5rem;
+        }
     }
 }
 
@@ -343,6 +396,10 @@
 
 .paragraph:not(:last-of-type) {
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: $tiny) {
+        margin-bottom: 1rem;
+    }
 }
 
 //LIST
@@ -356,6 +413,11 @@
 
     display: flex;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: $tiny) {
+        margin: 1rem 0;
+        padding: 1rem 0;
+    }
 
     &__item {
         flex: 0 0 50%;
@@ -386,6 +448,10 @@
 
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $tiny) {
+        font-size: 1.1rem
+    }
 
     &__friends {
         display: flex;
@@ -421,6 +487,15 @@
     @media only screen and (max-width: $medium) {
         padding: 2rem;
         margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: $smallest) {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: $tiny) {
+        margin-bottom: 1rem;
     }
 
     &__text {
@@ -488,11 +563,28 @@
         padding: 2.5rem 0;
     }
 
+    @media only screen and (max-width: $smallest) {
+        padding: 1rem 0;
+    }
+
     &__book-now {
         font-size: 2rem;
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 2.5rem;
+
+        @media only screen and (max-width: $small) {
+            font-size: 1.7rem;
+        }
+
+        @media only screen and (max-width: $smallest) {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: $tiny) {
+            font-size: 1.1rem;
+        }
     }
 }
 
@@ -510,6 +602,18 @@
     overflow: hidden;
     cursor: pointer;
 
+    @media only screen and (max-width: $small) {
+        font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: $smallest) {
+        font-size: 1.1rem;
+    }
+
+    @media only screen and (max-width: $tiny) {
+        font-size: .8rem;
+    }
+
     & > * {
         display: inline-block;
         height: 100%;
@@ -519,6 +623,18 @@
 
     &__visible {
         padding: 2rem 7.5rem;
+
+        @media only screen and (max-width: $small) {
+            padding: 1.75rem 6rem;
+        }
+
+        @media only screen and (max-width: $smallest) {
+            padding: 1.25rem 3.5rem;
+        }
+
+        @media only screen and (max-width: $tiny) {
+            padding: 1rem 2.5rem;
+        }
         
     }
 
@@ -527,6 +643,18 @@
         padding: 2rem 0;
         left: 0;
         top: -100%;
+
+        @media only screen and (max-width: $small) {
+            padding: 1.75rem 0;
+        }
+
+        @media only screen and (max-width: $smallest) {
+            padding: 1.25rem 0;
+        }
+
+        @media only screen and (max-width: $tiny) {
+            padding: 1rem 0;
+        }
     }
 
     &:hover {
